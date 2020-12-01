@@ -52,7 +52,7 @@ Things you may want to cover:
 |Colum|Type|Options|
 |-----|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|groups||integer|null: false, foreign_key: true|
+|groups|integer|null: false, foreign_key: true|
 
 ### Assciation
 - belongs_to :user
