@@ -32,6 +32,12 @@ Things you may want to cover:
 |name|string|null: false|
 
 ### Association
-- has_many :groups-users
+- has_many :groups_users
 - has_many :groups, through:groups-users
 - has_many :chats
+
+## groupsテーブル
+
+|Colum|Type|Options|
+|-----|----|-------|
+|group_name|string|null: false|
