@@ -17,7 +17,9 @@
         justify-content: space-between;
         &__name {
         }
-
+        &__icons {
+          width: 60px;
+        }
       }
     }
     .group-list {
