@@ -11,6 +11,10 @@
       align-items: center;
       }
     }
+    .group-list {
+      background-color: #2f3e51;
+      height: calc(100vh - 100px)
+    }
   }
   .Chat-main {
     width: calc(100vw - 300px);
