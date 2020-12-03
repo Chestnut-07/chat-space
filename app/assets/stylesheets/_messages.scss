@@ -9,6 +9,13 @@
       padding: 0 20px;
       display: flex;
       align-items: center;
+      .header-items{
+        height: 20px;
+        background-color: #d8d8d8;
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+
       }
     }
     .group-list {
