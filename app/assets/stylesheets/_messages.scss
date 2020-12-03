@@ -7,5 +7,9 @@
   .Chat-main {
     width: calc(100vw - 300px);
     background-color: #ffffff;
+    .group-info {
+      background-color: #ffffff;
+      height: 100px;
+    }
   }
 }
