@@ -3,6 +3,14 @@
   .Side-bar {
     width: 300px;
     background-color: #253141;
+    .user-name {
+      background-color: #253141;
+      height: 100px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      }
+    }
   }
   .Chat-main {
     width: calc(100vw - 300px);
