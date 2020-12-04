@@ -21,11 +21,11 @@
         &__icons {
           width: 60px;
           text-align: right;
-          .edit {
+          &__edit {
             color: #ffffff;
             text-decoration: none;
           }
-          .cog {
+          &__cog {
             color: #ffffff;
             margin-left: 5px;
           }
