@@ -77,6 +77,17 @@
         color: #999999;
         font-size: 12px;
       }
+      &__header-right {
+        width: 72px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid #38aef0;
+        color: #38aef0;
+        font-size: 16px;
+        margin-top: 28px;
+        padding: 0 20px;
+        text-decoration: none;
+      }
     }
     .message-list {
       background-color: #fafafa;
