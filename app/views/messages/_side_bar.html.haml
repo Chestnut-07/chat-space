@@ -3,9 +3,9 @@
     .header-items
       .header-items__name
         %p masa
-      .header-items__icons
-        = link_to '#' do
-          = icon('fas', 'edit', class: "header-items__icons--edit")
-        = link_to '#' do
-          = icon('fas', 'cog', class: "header-items__icons--cog")
+      .header-items_icons
+        = link_to '#' , calss: "header--items__icons--edit" do
+          = icon('fas', 'edit', class: "header-items__icons--icon" )
+        = link_to '#' , class: "header--items__icons--cog" do
+          = icon('fas', 'cog', class: "header-items__icons--icon")
   .group-list
