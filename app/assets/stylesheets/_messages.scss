@@ -20,16 +20,15 @@
         }
         &__icons {
           width: 60px;
-          text-align: right;
+          text-align: end;
           &--icon {
             color: #ffffff;
           }
-          &__edit {
-            color: #ffffff;
+          &--edit {
             text-decoration: none;
           }
-          &__cog {
-            color: #ffffff;
+          &--cog {
+            text-decoration: none;
             margin-left: 5px;
           }
         }
