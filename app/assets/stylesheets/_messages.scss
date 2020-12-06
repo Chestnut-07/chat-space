@@ -124,6 +124,10 @@
       .form-data {
         display: flex;
         justify-content: space-between;
+        &__contents {
+          position: relative;
+          width: 100%;
+        }
     }
   }
 }
