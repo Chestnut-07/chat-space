@@ -1,0 +1,27 @@
+.Chat-main
+  .group-info
+    .group-info__header-left
+      .group-info__group-name
+        test
+      .group-info__member-list
+        Member : masa
+    =link_to '#', class: "group-info__header-right" do
+      Edit
+  .message-list
+    .message-box
+      .message-info
+        .message-info__name
+          masa
+        .message-info__date
+          2019/11/20(wed) 17:43:01
+      .message-main
+        .message-main__text
+          おはよう!
+  .chat-footer
+    %form.form
+      .form__contents
+        %input{type:"text", placeholder: "type a message", class: "form__input-content"}
+        %label{class: "form__input-image"}
+          =icon("fa","image")
+      %input{type:"submit", value: "Send", class: "form__submit"}
+      
