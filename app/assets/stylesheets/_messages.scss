@@ -24,18 +24,18 @@
       &__icons {
         width: 60px;
         text-align: right;
-        &--edit {
-          text-decoration: none;
-          display: inline-block;
-          color: #ffffff;
-        }
-        &--cog {
-          display: inline-block;
-          text-decoration: none;
-          margin-left: 5px;
-          color: #ffffff;
-        }
       }
+      &__edit {
+        text-decoration: none;
+        display: inline-block;
+        color: #ffffff;
+      }
+      &__cog {
+        display: inline-block;
+        text-decoration: none;
+        margin-left: 5px;
+        color: #ffffff;
+       }
     }
     .group-list {
       background-color: #2f3e51;
