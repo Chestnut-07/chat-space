@@ -140,6 +140,16 @@
           font-size: 25px;
           line-height: 50px;
         }
+        &__submit {
+          margin-left: 15px;
+          padding: 0 30px;
+          height: 50px;
+          background-color: #38aef0;
+          color: #fff;
+          font-size: 16px;
+          border: none;
+        }
+      }
     }
   }
 }
