@@ -9,32 +9,31 @@
       padding: 0 20px;
       display: flex;
       align-items: center;
-      .header-items{
+      &__header-items{
         height: 20px;
         width: 260px;
         display: flex;
         justify-content: space-between;
-        &__name {
-          text-align: left;
+      }
+      &__name {
+        text-align: left;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      &__icons {
+        width: 60px;
+        text-align: right;
+        &--edit {
+          text-decoration: none;
+          display: inline-block;
           color: #ffffff;
-          font-weight: bold;
-          font-size: 16px;
         }
-        &__icons {
-          width: 60px;
-          text-align: right;
-          &--icon {
-            color: #ffffff;
-          }
-          &--edit {
-            text-decoration: none;
-            display: inline-block;
-          }
-          &--cog {
-            display: inline-block;
-            text-decoration: none;
-            margin-left: 5px;
-          }
+        &--cog {
+          display: inline-block;
+          text-decoration: none;
+          margin-left: 5px;
+          color: #ffffff;
         }
       }
     }
