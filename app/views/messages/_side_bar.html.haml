@@ -2,11 +2,11 @@
   .user-name
     .user-name__header-items
       .user-name__name
-        masa
+        = current_user.name
       .user-name__icons
         = link_to '#', class: "user-name__edit"  do
           = icon('fas', 'edit')
-        = link_to '#', class: "user-name__cog" do
+        = link_to edit_user_path(current_user), class: "user-name__cog" do
           = icon('fas', 'cog')
   .group-list
     .group
