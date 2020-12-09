@@ -13,6 +13,11 @@ class GroupsController < ApplicationController
       render :new
     end
   end
+
+  def edit
+    @group = Group.find(params[:id])
+  end
+
   end
   
 end
