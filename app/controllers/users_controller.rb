@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
 
-  def new
+  def edit
   end
 
   def update
