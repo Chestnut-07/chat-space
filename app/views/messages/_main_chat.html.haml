@@ -18,10 +18,11 @@
         .message-main__text
           おはよう!
   .chat-footer
-    %form.form
+    = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
       .form__contents
-        %input{type:"text", placeholder: "type a message", class: "form__input-content"}
-        %label{class: "form__input-image"}
+        = f.text_field :content, class: "form__input-content", placeholder: 'type a message'
+        = f.label, class: "form__input-image" do
           =icon("fa","image")
-      %input{type:"submit", value: "Send", class: "form__submit"}
+          = f.field :image, class: 'Hidden'
+      = f.submit 'Send', class: "form__submit"
       
