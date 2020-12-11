@@ -14,7 +14,6 @@ class MessagesController < ApplicationController
       render :index
     end
   end
-<<<<<<< HEAD
 
   private
   def message_params
@@ -24,14 +23,4 @@ class MessagesController < ApplicationController
   def marge_group
     @group = Group.find(params[:group_id])
   end
-=======
-  private
-  def message_params
-    params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
-  end
-
-  def marge_group
-    @group = Group.find(params[:group_id])
-  end
->>>>>>> parent of d886763... add_messages.controller.rb_marge_group
 end
