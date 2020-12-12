@@ -138,9 +138,10 @@
           border: none;
         }
         &__input-image {
+          height: 50px;
           position: absolute;
           right: 10px;
-          font-size: 25px;
+        }
           line-height: 50px;
         }
         &__submit {
