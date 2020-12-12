@@ -1,4 +1,6 @@
 class MessagesController < ApplicationController
+  before_action :marge_group
+
   def index
     @message = Message.new
     @messages = @group.messages.includes(:user)
