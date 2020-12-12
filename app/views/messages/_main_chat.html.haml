@@ -14,8 +14,7 @@
     = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
       .form__contents
         = f.text_field :content, class: "form__input-content", placeholder: 'type a message'
-        = f.label, class: "form__input-image" do
-          =icon("fa","image")
-          = f.field :image, class: 'Hidden'
+        = f.label :image, class: "form__input-image" do
+          = icon("fa","image",class: "form__icon")
       = f.submit 'Send', class: "form__submit"
       
