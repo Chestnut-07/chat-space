@@ -2,13 +2,14 @@
   .group-info
     .group-info__header-left
       .group-info__group-name
-      .group-info__member-list
-        Member : masa
     =link_to '#', class: "group-info__header-right" do
         = @group.name 
       .group-info__member-block
         .group-info__member-list
           Member: 
+        .group-info__member-users
+          - @group.users.each do |names|
+            = names.name
       Edit
   .message-list
     = render @messages
