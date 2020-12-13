@@ -12,7 +12,18 @@
     = link_to edit_group_path(@group), class: "group-info__header-right" do
       Edit
   .message-list
-    = render @messages
+    -@messages.each do |message|
+      .message-box
+        .message-info
+          .message-info__name
+            = message.user.name
+          .message-info__date
+            = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+        .message-main
+          - if message.content.present?
+            %p.message-main__text
+              = message.content
+          = image_tag message.image.url, class: "message-main__image" if message.image.present?
 
   .chat-footer
     = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
