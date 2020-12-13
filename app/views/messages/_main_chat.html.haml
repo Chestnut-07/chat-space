@@ -20,5 +20,6 @@
         = f.text_field :content, class: "form__input-content", placeholder: 'type a message'
         = f.label :image, class: "form__input-image" do
           = icon("fa","image",class: "form__icon")
+          = f.file_field :image, class: 'Hidden'
       = f.submit 'Send', class: "form__submit"
       
