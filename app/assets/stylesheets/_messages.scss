@@ -41,6 +41,7 @@
       background-color: #2f3e51;
       height: calc(100vh - 100px);
       padding: 0 20px;
+      overflow: scroll;
       .group {
         padding: 20px 0 40px;
         &__messages {
@@ -95,6 +96,7 @@
       background-color: #fafafa;
       height: calc(100vh - 190px);
       padding: 35px 40px 0;
+      overflow: scroll;
       .message-box {
         margin-bottom: 46px;
         .message-info {
