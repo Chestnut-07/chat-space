@@ -75,6 +75,9 @@
         color: #333333;
         font-size: 20px;
       }
+      &__member-block {
+        display: flex;
+      }
       &__member-list {
         padding-top: 15px;
         color: #999999;
