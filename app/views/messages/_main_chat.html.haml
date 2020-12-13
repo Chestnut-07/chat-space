@@ -2,7 +2,6 @@
   .group-info
     .group-info__header-left
       .group-info__group-name
-    =link_to '#', class: "group-info__header-right" do
         = @group.name 
       .group-info__member-block
         .group-info__member-list
@@ -10,6 +9,7 @@
         .group-info__member-users
           - @group.users.each do |names|
             = names.name
+    = link_to edit_group_path(@group), class: "group-info__header-right" do
       Edit
   .message-list
     = render @messages
