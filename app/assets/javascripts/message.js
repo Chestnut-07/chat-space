@@ -52,3 +52,10 @@ $(function(){
       processData: false,
       contentType: false
     })
+    .done(function(data){
+      let html = buildHTML(data);
+      $('.message-list').append(html);
+      $('.message-list').animate({ scrollTop: $('.message-list')[0].scrollHeight});
+      $('form')[0].reset();
+      $('.form__submit').prop('disabled', false);
+    })
