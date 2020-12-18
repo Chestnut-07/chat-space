@@ -23,21 +23,21 @@ $(function(){
     } else {
       let html =　//メッセージに画像が含まれない場合のHTMLを作る
       `<div class="message-box">
-      <div class="message-info">
-        <div class="message-info__name">
-          ${message.user_name}
-        </div>
-        <div class="message-info__date">
+        <div class="message-info">
+          <div class="message-info__name">
+            ${message.user_name}
+          </div>
+          <div class="message-info__date">
             ${message.created_at}
+          </div>
         </div>
-      </div>
-      <div class="message-main">
-        <p class="message-main__text">
-          ${message.content}
-        </p>
-      </div>
-    </div>`
-    return html;
+        <div class="message-main">
+          <p class="message-main__text">
+            ${message.content}
+          </p>
+        </div>
+      </div>`
+      return html;
     };
   }
 
@@ -59,8 +59,8 @@ $(function(){
       $('form')[0].reset();
       $('.form__submit').prop('disabled', false);
     })
-    .fail(function(){
-      alert("メッセージ送信に失敗しました")
-    })
+    .fail(function() {
+      alert("メッセージ送信に失敗しました");
+    });
   });
 });
