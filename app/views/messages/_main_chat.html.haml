@@ -9,8 +9,7 @@
         .group-info__member-users
           - @group.users.each do |names|
             = names.name
-    = link_to edit_group_path(@group), class: "group-info__header-right" do
-      Edit
+    = link_to 'Edit',edit_group_path(@group), class: "group-info__header-right" 
   .message-list
     -@messages.each do |message|
       .message-box
