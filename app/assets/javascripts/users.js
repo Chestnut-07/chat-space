@@ -42,4 +42,5 @@ $(function() {
     });
   });
   $("#UserSearchResult").on("click", ".ChatMember__add", function() {
+    const userName = $(this).attr("data-user-name");
   });
