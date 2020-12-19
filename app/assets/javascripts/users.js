@@ -9,3 +9,6 @@ $(function() {
     })
     .done(function(users) {
       $("#UserSearchResult").empty();
+    .fail(function() {
+      alert("通信エラーです。ユーザーが表示できません。");
+    });
