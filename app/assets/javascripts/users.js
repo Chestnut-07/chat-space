@@ -17,6 +17,17 @@ $(function() {
                 `;
                 $("#UserSearchResult").append(html);
   }
+    function addMember(name, id) {
+    let html = `
+                <div class="ChatMember">
+                  <p class="ChatMember__name">${name}</p>
+                  <input name="group[user_ids][]" type="hidden" value="${id}" />
+                  <div class="ChatMember__remove ChatMember__button">削除</div>
+                </div>
+                `;
+    $(".ChatMembers").append(html);
+  }
+
   $("#UserSearch__field").on("keyup", function() {
     let input = $("#UserSearch__field").val();
     $.ajax({
@@ -45,4 +56,6 @@ $(function() {
     const userName = $(this).attr("data-user-name");
     const userID = $(this).attr("data-user-id");
     $(this).parent().remove();
+    addMember(userName, userID);
+  });
   });
