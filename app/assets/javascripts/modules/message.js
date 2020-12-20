@@ -3,7 +3,7 @@ $(function(){
     //[もしメッセージに画像が含まれていたら]という条件式
     if (message.image) {
       let html = //メッセージに画像が含まれる場合のHTMLを作る
-        `<div class="message-box">
+        `<div class="message-box" data-message-id=${message.id}>
           <div class="message-info">
             <div class="message-info__name">
               ${message.user_name}
@@ -16,13 +16,13 @@ $(function(){
             <p class="message-main__text">
               ${message.content}
             </p>
-            <img class="message-main_image" src="${message.image}">
+            <img class="message-main_image" >
           </div>
         </div>`
       return html;
     } else {
-      let html =　//メッセージに画像が含まれない場合のHTMLを作る
-      `<div class="message-box">
+      let html = //メッセージに画像が含まれない場合のHTMLを作る
+      `<div class="message-box" data-message-id=${message.id}>
         <div class="message-info">
           <div class="message-info__name">
             ${message.user_name}
