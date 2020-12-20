@@ -65,5 +65,6 @@ $(function(){
   });
 
   let reloadMessages = function() {
+    let last_message_id = $('.message-box:last').data("message-id") || 0;
   };
 });
