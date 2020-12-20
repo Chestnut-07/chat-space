@@ -72,5 +72,9 @@ $(function(){
       dataType: 'json',
       data: {id: last_message_id}
     })
+
+    .done(function(messages) {
+      // 更新するメッセージがなかった場合は.doneの後の処理が動かないようにする
+    })
   };
 });
