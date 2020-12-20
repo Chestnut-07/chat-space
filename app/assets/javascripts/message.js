@@ -66,5 +66,11 @@ $(function(){
 
   let reloadMessages = function() {
     let last_message_id = $('.message-box:last').data("message-id") || 0;
+    $.ajax({
+      url: "api/messages",
+      type: 'get',
+      dataType: 'json',
+      data: {id: last_message_id}
+    })
   };
 });
