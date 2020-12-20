@@ -76,5 +76,8 @@ $(function(){
     .done(function(messages) {
       // 更新するメッセージがなかった場合は.doneの後の処理が動かないようにする
     })
+    .fail(function() {
+      alert('error');
+    });
   };
 });
