@@ -16,7 +16,7 @@ $(function(){
             <p class="message-main__text">
               ${message.content}
             </p>
-            <img class="message-main_image" >
+            <img class="message-main_image" src="${message.image}">
           </div>
         </div>`
       return html;
@@ -61,6 +61,7 @@ $(function(){
     })
     .fail(function() {
       alert("メッセージ送信に失敗しました");
+      $('.form__submit').prop('disabled', false);
     });
   });
 });
